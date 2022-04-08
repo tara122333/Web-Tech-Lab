@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            color: #fff;
+            flex-direction: column;
+        }
+        form{
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        label,button{
+            
+            height: 20px;
+            margin: 9px;
+        }
+        button{
+            cursor: pointer;
+            height: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Catalog</h1>
+    <h2>Books</h2>
+    <form action="order.html">
+        <input type="checkbox" name="math" id="math" value="math">
+        <label for="math">Mathematics Price :- 599/-</label>
+        <input type="checkbox" name="html" id="html" value="html">
+        <label for="html">HTML Price :- 699/-</label>
+        <input type="checkbox" name="css" id="css" value="css">
+        <label for="css">CSS Price :- 999/-</label>
+        <button type="submit">Buy</button>
+    </form>
+</body>
+</html>
