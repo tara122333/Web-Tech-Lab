@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation of a form</title>
+
+    <script>
+        function myValidation(){
+            let x = document.forms["myForm"]["user_full_name"].value;
+            if(x==""){
+                alert("please enter your name !!");
+                return false;
+            }
+
+        }
+    </script>
+
+</head>
+<body>
+    
+    <h1>This is form Validation</h1>
+    <form action="home.html" name="myForm" method="post" onsubmit="return myValidation()">
+        <input type="text" id="user_name" name="user_full_name" placeholder="Enter Your name "/>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
